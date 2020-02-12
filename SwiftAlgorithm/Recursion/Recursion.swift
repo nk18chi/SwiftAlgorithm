@@ -57,6 +57,8 @@ func reverseLines(_ line: Int) {
     // MARK: - YOUR RECURSIVE CODE
 }
 
+
+// 5. evaluate
 func calculate(_ first: Int, _ second: Int, _ sign: String) -> Int {
     switch sign {
     case "+":
