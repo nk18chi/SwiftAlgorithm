@@ -8,10 +8,10 @@
 
 import Foundation
 
-print(evaluate("7"))
-print(evaluate("(2+2)"))
-print(evaluate("(1+(2*4))"))
-print(evaluate("((1+3)+((1+2)*5))"))
+//print(evaluate("7"))
+//print(evaluate("(2+2)"))
+//print(evaluate("(1+(2*4))"))
+//print(evaluate("((1+3)+((1+2)*5))"))
 //print("Hello, World!")
 //
 //
@@ -21,3 +21,7 @@ print(evaluate("((1+3)+((1+2)*5))"))
 //
 //print(linearSearch([1,2,3,4,5,6,7], 8))
 //print(binarySearch([1,2,3,4,5,6,7], 8))
+
+
+//permutation("aa")
+permutation("park")
