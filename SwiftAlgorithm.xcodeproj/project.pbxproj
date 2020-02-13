@@ -54,14 +54,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		B08C804A23F4C1D9002A12AA /* DateStructures1 */ = {
+		B08C804A23F4C1D9002A12AA /* DataStructures1 */ = {
 			isa = PBXGroup;
 			children = (
 				B08C804B23F4C1EF002A12AA /* Bag.swift */,
 				B08C804D23F4C20E002A12AA /* Queue.swift */,
 				B08C804F23F4C223002A12AA /* Stack.swift */,
 			);
-			path = DateStructures1;
+			path = DataStructures1;
 			sourceTree = "<group>";
 		};
 		B0D4296C23F21FE40092108D = {
@@ -83,7 +83,7 @@
 		B0D4297723F21FE40092108D /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
-				B08C804A23F4C1D9002A12AA /* DateStructures1 */,
+				B08C804A23F4C1D9002A12AA /* DataStructures1 */,
 				B0D4298223F37CD10092108D /* Recursion */,
 				B0D4297F23F220590092108D /* SearchingAndSorting */,
 				B0D4297823F21FE40092108D /* main.swift */,
