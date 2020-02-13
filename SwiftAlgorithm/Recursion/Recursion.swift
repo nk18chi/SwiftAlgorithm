@@ -51,11 +51,11 @@ func printBinary(_ num: Int) {
 // 4. reverseLines
 // - Print all lines in reverse order (recursively) from a text file
 // - You can change the function header if you want.
-func reverseLines(_ line: Int) {
-    let contents = try! String(contentsOfFile: "/Users/park/Desktop/SwiftAlgorithmsDataStructures/SwiftAlgorithmsDataStructures/Recursion/story.txt", encoding: .utf8)
-    let lines = contents.split(separator: "\n")
-    // MARK: - YOUR RECURSIVE CODE
-}
+//func reverseLines(_ line: Int) {
+//    let contents = try! String(contentsOfFile: "/Users/park/Desktop/SwiftAlgorithmsDataStructures/SwiftAlgorithmsDataStructures/Recursion/story.txt", encoding: .utf8)
+//    let lines = contents.split(separator: "\n")
+//    // MARK: - YOUR RECURSIVE CODE
+//}
 
 
 // 5. evaluate
