@@ -55,3 +55,23 @@ import Foundation
 //    print(q.dequeue() ?? 0)
 //}
 //print(q.isEmpty())
+
+//// stack API
+//var s = Stack<Int>()
+//print(s.isEmpty())
+//s.push(item: 1)
+//print(s.peek() ?? 0)
+//s.push(item: 2)
+//print(s.peek() ?? 0)
+//s.push(item: 3)
+//print(s.peek() ?? 0)
+//print(s.pop() ?? 0)
+//print(s.peek() ?? 0)
+//s.push(item: 4)
+//s.push(item: 5)
+//print(s.isEmpty())
+//
+//while (s.peek() != nil ){
+//    print(s.pop() ?? 0)
+//}
+//print(s.isEmpty())

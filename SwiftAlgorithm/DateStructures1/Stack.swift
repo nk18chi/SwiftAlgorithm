@@ -33,24 +33,42 @@ public final class Stack<E> : Sequence {
     /// - Parameter item: the item to add
     public func push(item: E) {
         // MARK: - TODO
+        let new = Node<E>(item: item)
+        if first == nil {
+            first = new
+            count += 1
+            return
+        }
+        
+        let old = first
+        new.next = old
+        first = new
+        count += 1
     }
     
     /// Removes and returns the item most recently added to this stack.
     public func pop() -> E? {
         // MARK: - TODO
-        return nil
+        if first == nil {
+            return nil
+        }
+        let res = first
+
+        first = first!.next
+        count -= 1
+        return res?.item
     }
     
     /// Returns (but does not remove) the item most recently added to this stack.
     public func peek() -> E? {
         // MARK: - TODO
-        return nil
+        return first?.item
     }
     
     /// Returns true if this stack is empty.
     public func isEmpty() -> Bool {
         // MARK: - TODO
-        return false
+        return count == 0
     }
     
     /// StackIterator that iterates over the items in LIFO order.
@@ -59,11 +77,14 @@ public final class Stack<E> : Sequence {
         
         fileprivate init(_ first: Node<E>?) {
             // MARK: - TODO
+            current = first
         }
         
         public mutating func next() -> E? {
             // MARK: - TODO
-            return nil
+            let n = current
+            current = current?.next
+            return n?.item
         }
         
         public typealias Element = E
