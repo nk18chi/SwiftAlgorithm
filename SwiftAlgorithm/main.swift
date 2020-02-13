@@ -8,7 +8,7 @@
 
 import Foundation
 
-// evaluate
+//// evaluate
 //print(evaluate("7"))
 //print(evaluate("(2+2)"))
 //print(evaluate("(1+(2*4))"))
@@ -21,17 +21,37 @@ import Foundation
 //print(linearSearch([1,2,3,4,5,6,7], 8))
 //print(binarySearch([1,2,3,4,5,6,7], 8))
 
+// QUick Soring
+//print(quickSort([3,2,4,1,5], <))
+
 // permutation
 //permutation("aa")
 //permutation("park")
 
-// API
-var nums = Bag<Int>()
-print(nums.isEmpty())
-nums.add(item: 1)
-nums.add(item: 2)
-nums.add(item: 3)
+// Bag API
+//var nums = Bag<Int>()
+//print(nums.isEmpty())
+//nums.add(item: 1)
+//nums.add(item: 2)
+//nums.add(item: 3)
+//
+//for n in nums {
+//    print(n)
+//}
 
-for n in nums {
-    print(n)
-}
+//// Queue API
+//var q = Queue<Int>()
+//print(q.isEmpty())
+//q.enqueue(item: 1)
+//q.enqueue(item: 2)
+//q.enqueue(item: 3)
+//print(q.peek() ?? 0)
+//print(q.dequeue() ?? 0)
+//print(q.peek() ?? 0)
+//q.enqueue(item: 4)
+//print(q.isEmpty())
+//
+//while (q.peek() != nil) {
+//    print(q.dequeue() ?? 0)
+//}
+//print(q.isEmpty())
