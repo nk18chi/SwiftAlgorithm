@@ -32,14 +32,22 @@ public final class Bag<E> : Sequence {
     
     /// Returns true if this bag is empty.
     public func isEmpty() -> Bool {
-        // MARK: - TODO
-        return false
+        return count == 0
     }
     
     /// Adds the item to this bag. (front)
     /// - Parameter item: the item to add to this bag
     public func add(item: E) {
-        // MARK: - TODO
+        let new = Node<E>(item: item)
+        if first == nil {
+            first = new
+            return
+        }
+        
+        let old: Node<E> = first!
+        new.next = old
+        first = new
+        count += 1
     }
     
     
@@ -50,11 +58,14 @@ public final class Bag<E> : Sequence {
         
         fileprivate init(_ first: Node<E>?) {
             // MARK: - TODO
+            current = first
         }
         
         public mutating func next() -> E? {
             // MARK: - TODO
-            return nil
+            let n = current
+            current = current?.next
+            return n?.item
         }
         
         public typealias Element = E
@@ -65,3 +76,10 @@ public final class Bag<E> : Sequence {
         return BagIterator<E>(first)
     }
 }
+
+extension Bag: CustomStringConvertible {
+    public var description: String {
+        return self.reduce(into: "") { $0 += "\($1) " }
+    }
+}
+
