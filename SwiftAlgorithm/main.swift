@@ -75,3 +75,8 @@ import Foundation
 //    print(s.pop() ?? 0)
 //}
 //print(s.isEmpty())
+
+// Backtracking
+//runRollDice()
+
+showDirectories()
