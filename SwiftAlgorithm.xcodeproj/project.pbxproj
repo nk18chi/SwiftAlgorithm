@@ -7,7 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B0076D9623FC902400518C0D /* QueensSolver.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0076D9423FC902400518C0D /* QueensSolver.swift */; };
+		B0076D9723FC902400518C0D /* Board.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0076D9523FC902400518C0D /* Board.swift */; };
 		B04CCDF623F60D3300F039B8 /* Sorting.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCDF523F60D3300F039B8 /* Sorting.swift */; };
+		B04CCDF923F6152A00F039B8 /* showFIlesAndDirectories.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCDF823F6152A00F039B8 /* showFIlesAndDirectories.swift */; };
+		B04CCDFC23F74DAC00F039B8 /* BackTracking.swift in Sources */ = {isa = PBXBuildFile; fileRef = B04CCDFB23F74DAC00F039B8 /* BackTracking.swift */; };
 		B08C804923F4B0F1002A12AA /* exercise_permutation.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C804823F4B0F1002A12AA /* exercise_permutation.swift */; };
 		B08C804C23F4C1EF002A12AA /* Bag.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C804B23F4C1EF002A12AA /* Bag.swift */; };
 		B08C804E23F4C20E002A12AA /* Queue.swift in Sources */ = {isa = PBXBuildFile; fileRef = B08C804D23F4C20E002A12AA /* Queue.swift */; };
@@ -31,7 +35,11 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		B0076D9423FC902400518C0D /* QueensSolver.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = QueensSolver.swift; sourceTree = "<group>"; };
+		B0076D9523FC902400518C0D /* Board.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Board.swift; sourceTree = "<group>"; };
 		B04CCDF523F60D3300F039B8 /* Sorting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sorting.swift; sourceTree = "<group>"; };
+		B04CCDF823F6152A00F039B8 /* showFIlesAndDirectories.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = showFIlesAndDirectories.swift; sourceTree = "<group>"; };
+		B04CCDFB23F74DAC00F039B8 /* BackTracking.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackTracking.swift; sourceTree = "<group>"; };
 		B08C804823F4B0F1002A12AA /* exercise_permutation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = exercise_permutation.swift; sourceTree = "<group>"; };
 		B08C804B23F4C1EF002A12AA /* Bag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Bag.swift; sourceTree = "<group>"; };
 		B08C804D23F4C20E002A12AA /* Queue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Queue.swift; sourceTree = "<group>"; };
@@ -54,6 +62,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B0076D9123FC8FC400518C0D /* N_QueensProblem */ = {
+			isa = PBXGroup;
+			children = (
+				B0076D9523FC902400518C0D /* Board.swift */,
+				B0076D9423FC902400518C0D /* QueensSolver.swift */,
+			);
+			path = "\U0010N_QueensProblem";
+			sourceTree = "<group>";
+		};
+		B04CCDF723F614FF00F039B8 /* MiniProject1 */ = {
+			isa = PBXGroup;
+			children = (
+				B04CCDF823F6152A00F039B8 /* showFIlesAndDirectories.swift */,
+			);
+			path = MiniProject1;
+			sourceTree = "<group>";
+		};
+		B04CCDFA23F74D9800F039B8 /* Backtracking */ = {
+			isa = PBXGroup;
+			children = (
+				B0076D9123FC8FC400518C0D /* N_QueensProblem */,
+				B04CCDFB23F74DAC00F039B8 /* BackTracking.swift */,
+			);
+			path = Backtracking;
+			sourceTree = "<group>";
+		};
 		B08C804A23F4C1D9002A12AA /* DataStructures1 */ = {
 			isa = PBXGroup;
 			children = (
@@ -83,6 +117,8 @@
 		B0D4297723F21FE40092108D /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				B04CCDFA23F74D9800F039B8 /* Backtracking */,
+				B04CCDF723F614FF00F039B8 /* MiniProject1 */,
 				B08C804A23F4C1D9002A12AA /* DataStructures1 */,
 				B0D4298223F37CD10092108D /* Recursion */,
 				B0D4297F23F220590092108D /* SearchingAndSorting */,
@@ -168,7 +204,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04CCDF923F6152A00F039B8 /* showFIlesAndDirectories.swift in Sources */,
 				B08C804923F4B0F1002A12AA /* exercise_permutation.swift in Sources */,
+				B04CCDFC23F74DAC00F039B8 /* BackTracking.swift in Sources */,
+				B0076D9623FC902400518C0D /* QueensSolver.swift in Sources */,
+				B0076D9723FC902400518C0D /* Board.swift in Sources */,
 				B08C804E23F4C20E002A12AA /* Queue.swift in Sources */,
 				B0D4298423F37CFE0092108D /* Recursion.swift in Sources */,
 				B0D4298123F2208E0092108D /* Searching.swift in Sources */,

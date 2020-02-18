@@ -79,4 +79,9 @@ import Foundation
 // Backtracking
 //runRollDice()
 
-showDirectories()
+// Mini Project
+//showDirectories()
+
+var b = Board(size: 8)
+solveQueens(board: &b, col: 0)
+print("\(countForTask1) possible ways")
