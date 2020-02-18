@@ -82,6 +82,13 @@ import Foundation
 // Mini Project
 //showDirectories()
 
+//// Mini Project 2 (Taks1)
+//var b = Board(size: 8)
+//getAllPosibbleWays(board: &b, col: 0)
+//print("\(countForTask1) possible ways")
+
+// Mini Project 2 (Taks2)
 var b = Board(size: 8)
-getAllPosibbleWays(board: &b, col: 0)
-print("\(countForTask1) possible ways")
+var isAnswer = false
+getOnePosibbleWays(board: &b, col: 0, isAnswer: &isAnswer)
+print("Number of recursive calls: \(countForTask2)")

@@ -31,3 +31,21 @@ func getAllPosibbleWays(board: inout Board, col: Int) {
         board.remove(row: i, col: col)
     }
 }
+
+var countForTask2 = 0
+// Task 1
+func getOnePosibbleWays(board: inout Board, col: Int, isAnswer: inout Bool) {
+    countForTask2 += 1
+    if col == 8 {
+        print(board)
+        isAnswer = true
+        return
+    }
+    for i in 0..<8 {
+        guard !isAnswer else { return }
+        guard board.isSafe(row: i, col: col) else { continue }
+        board.place(row: i, col: col)
+        getOnePosibbleWays(board: &board, col: col + 1, isAnswer: &isAnswer)
+        board.remove(row: i, col: col)
+    }
+}
