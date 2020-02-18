@@ -83,5 +83,5 @@ import Foundation
 //showDirectories()
 
 var b = Board(size: 8)
-solveQueens(board: &b, col: 0)
+getAllPosibbleWays(board: &b, col: 0)
 print("\(countForTask1) possible ways")

@@ -18,7 +18,7 @@ import Foundation
 
 var countForTask1 = 0
 // Task 1
-func solveQueens(board: inout Board, col: Int) {
+func getAllPosibbleWays(board: inout Board, col: Int) {
     if col == 8 {
         print(board)
         countForTask1 += 1
@@ -27,7 +27,7 @@ func solveQueens(board: inout Board, col: Int) {
     for i in 0..<8 {
         guard board.isSafe(row: i, col: col) else { continue }
         board.place(row: i, col: col)
-        solveQueens(board: &board, col: col + 1)
+        getAllPosibbleWays(board: &board, col: col + 1)
         board.remove(row: i, col: col)
     }
 }
