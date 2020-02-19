@@ -33,7 +33,7 @@ func getAllPosibbleWays(board: inout Board, col: Int) {
 }
 
 var countForTask2 = 0
-// Task 1
+// Task 2
 func getOnePosibbleWays(board: inout Board, col: Int, isAnswer: inout Bool) {
     countForTask2 += 1
     if col == 8 {
