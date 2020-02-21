@@ -92,3 +92,31 @@ import Foundation
 //var isAnswer = false
 //getOnePosibbleWays(board: &b, col: 0, isAnswer: &isAnswer)
 //print("Number of recursive calls: \(countForTask2)")
+
+// Group Presenatation
+// 1. Find the smallest/largest M elements in a stream of N items.
+let n: Int = 7
+var arr: [Int] = Array(repeating: 0, count: n)
+let m = 3
+let queue: CustomPriorityQueue<Int> = CustomPriorityQueue(m) { $0 > $1 }
+
+for i in 0..<n {
+    arr[i] = Int.random(in: 1...10000)
+    queue.insert(arr[i])
+}
+
+var res: [Int] = Array(repeating: 0, count: m)
+var j = 0
+while (queue.peek() != nil) {
+    res[j] = queue.pop()!
+    j += 1
+}
+print("Original Arrat")
+print(arr)
+print()
+print("heap sort(nlogm solution)")
+print(res)
+print()
+print("normal sort(nlogn solution)")
+let sortedArray: [Int] = arr.sorted { $0 > $1 }
+print(sortedArray[0..<m])
