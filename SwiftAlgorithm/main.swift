@@ -111,7 +111,7 @@ while (queue.peek() != nil) {
     res[j] = queue.pop()!
     j += 1
 }
-print("Original Arrat")
+print("Original Array")
 print(arr)
 print()
 print("heap sort(nlogm solution)")
