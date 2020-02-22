@@ -19,18 +19,18 @@ public class CustomPriorityQueue<T> {
     }
 
     func insert(_ a: T) {
+        if arr.count >= limit && compare(arr[0], a) { return }
+        if arr.count >= limit {
+            arr.removeFirst()
+        }
         arr.insert(a, at: 0)
         heapify(0)
-        if arr.count > self.limit {
-            arr.removeLast()
-        }
     }
     
     func peek() -> T? {
         if arr.isEmpty {
             return nil
         }
-        
         return arr[0]
     }
 
@@ -57,11 +57,11 @@ public class CustomPriorityQueue<T> {
         let l: Int = 2 * i + 1, r: Int = 2 * i + 2
         var root: Int = i
 
-        if l < arr.count, compare(arr[l], arr[root]) {
+        if l < arr.count, !compare(arr[l], arr[root]) {
             root = l
         }
 
-        if r < arr.count, compare(arr[r], arr[root]) {
+        if r < arr.count, !compare(arr[r], arr[root]) {
             root = r
         }
 
