@@ -93,30 +93,74 @@ import Foundation
 //getOnePosibbleWays(board: &b, col: 0, isAnswer: &isAnswer)
 //print("Number of recursive calls: \(countForTask2)")
 
-// Group Presenatation
-// 1. Find the smallest/largest M elements in a stream of N items.
-let n: Int = 7
-var arr: [Int] = Array(repeating: 0, count: n)
-let m = 3
-let queue: CustomPriorityQueue<Int> = CustomPriorityQueue(m) { $0 > $1 }
+//// Group Presenatation
+//// 1. Find the smallest/largest M elements in a stream of N items.
+//let n: Int = 7
+//var arr: [Int] = Array(repeating: 0, count: n)
+//let m = 3
+//let queue: CustomPriorityQueue<Int> = CustomPriorityQueue(m) { $0 > $1 }
+//
+//for i in 0..<n {
+//    arr[i] = Int.random(in: 1...10000)
+//    queue.insert(arr[i])
+//}
+//
+//var res: [Int] = Array(repeating: 0, count: m)
+//var j = 0
+//while (queue.peek() != nil) {
+//    res[j] = queue.pop()!
+//    j += 1
+//}
+//print("Original Array")
+//print(arr)
+//print()
+//print("heap sort(nlogm solution)")
+//print(res)
+//print()
+//print("normal sort(nlogn solution)")
+//let sortedArray: [Int] = arr.sorted { $0 > $1 }
+//print(sortedArray[0..<m])
 
-for i in 0..<n {
-    arr[i] = Int.random(in: 1...10000)
-    queue.insert(arr[i])
-}
+//2. Find the substring pattern of length M in a text of length N. (Assume that N >= M)
+//let pattern: String = "NEEDLE"
+//let text: String = "INAHAYSTACKNEEDLEINA"
+//var dict: [Character: Int] = [:]
+//
+//for (i, c) in pattern.enumerated() {
+//    dict[c] = pattern.count - i - 1
+//}
+//print(dict)
+//print(dict["N"])
+//print(dict["A"])
+//
+//
+//func helper() -> Int {
+//    var tPointer: Int = pattern.count - 1
+//    var pPointer: Int = 0
+//
+//    while (tPointer < text.count) {
+//        pPointer = pattern.count - 1
+//        while (pPointer >= 0 && tPointer < text.count) {
+//            guard text[tPointer] != pattern[pPointer] else { break }
+//            tPointer -= 1
+//            pPointer -= 1
+//        }
+//        if pPointer < 0 {
+//            return tPointer + 1
+//        }
+//    }
+//    return -1
+//}
 
-var res: [Int] = Array(repeating: 0, count: m)
-var j = 0
-while (queue.peek() != nil) {
-    res[j] = queue.pop()!
-    j += 1
-}
-print("Original Array")
-print(arr)
-print()
-print("heap sort(nlogm solution)")
-print(res)
-print()
-print("normal sort(nlogn solution)")
-let sortedArray: [Int] = arr.sorted { $0 > $1 }
-print(sortedArray[0..<m])
+
+//
+//
+//N: 5
+//E: 0
+//D: 2
+//L: 1
+//
+
+
+
+getParent()
