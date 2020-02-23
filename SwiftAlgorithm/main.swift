@@ -2,7 +2,7 @@
 //  main.swift
 //  SwiftAlgorithm
 //
-//  Created by 美田直毅 on 2020-02-10.
+//  Created by Naoki Mita on 2020-02-10.
 //  Copyright © 2020 Naoki Mita. All rights reserved.
 //
 
@@ -93,9 +93,12 @@ import Foundation
 //getOnePosibbleWays(board: &b, col: 0, isAnswer: &isAnswer)
 //print("Number of recursive calls: \(countForTask2)")
 
-//Group Presenatation
-print("1. Find the smallest/largest M elements in a stream of N items.")
-getSortedElements(n: 7, m: 5, compare: <)
-print()
-print("2. Find the substring pattern of length M in a text of length N. (Assume that N >= M)")
-getPatternFromTest(pattern: "NEEDLE", text: "INAHAYSTACKNEEDLEINA")
+////Group Presenatation
+//print("1. Find the smallest/largest M elements in a stream of N items.")
+//getSortedElements(n: 7, m: 5, compare: <)
+//print()
+//print("2. Find the substring pattern of length M in a text of length N. (Assume that N >= M)")
+//getPatternFromTest(pattern: "NEEDLE", text: "INAHAYSTACKNEEDLEINA")
+
+//LCA
+getLowestCommonAncestor()
