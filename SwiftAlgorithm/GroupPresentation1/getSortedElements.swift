@@ -20,7 +20,7 @@ func getSortedElements(n: Int, m: Int, compare: @escaping (Int, Int) -> Bool) {
         arr[i] = Int.random(in: 1...10000)
         queue.insert(arr[i])
     }
-    
+
     var res: [Int] = Array(repeating: 0, count: m)
     var j = m - 1
     while (queue.peek() != nil && j > -1) {
