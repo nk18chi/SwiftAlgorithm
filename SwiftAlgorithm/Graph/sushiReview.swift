@@ -34,6 +34,7 @@ func getNumberOfRealSushiRestaurants() {
                 path = 1
             }
             if path < 1 { continue }
+            print(l)
             child.append(path)
         }
         if child.count < 1 { return 0 }
@@ -50,6 +51,11 @@ func getNumberOfRealSushiRestaurants() {
     for r in realList {
         var seen: Set<Int> = []
         let val: Int = dfs(num: r, seen: &seen) - 1
+        print(r)
+        print("value")
+//        58 94 36 37 69 6 65
+        print(val)
+        print()
         minPath = minPath < 0 ? val : min(minPath, val)
     }
     print(minPath)

@@ -35,6 +35,7 @@
 		B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9596B2407B3AE00D18466 /* problemSet2.swift */; };
 		B0F9597224086E2800D18466 /* getNumberOfTown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9597124086E2800D18466 /* getNumberOfTown.swift */; };
 		B0F959742408797F00D18466 /* getNumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959732408797F00D18466 /* getNumberOfIslands.swift */; };
+		B0F959762408833800D18466 /* getStepsToEscapeFromMaze.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959752408833800D18466 /* getStepsToEscapeFromMaze.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -82,6 +83,7 @@
 		B0F9596F24086B4400D18466 /* LCATestCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LCATestCases; sourceTree = "<group>"; };
 		B0F9597124086E2800D18466 /* getNumberOfTown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNumberOfTown.swift; sourceTree = "<group>"; };
 		B0F959732408797F00D18466 /* getNumberOfIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNumberOfIslands.swift; sourceTree = "<group>"; };
+		B0F959752408833800D18466 /* getStepsToEscapeFromMaze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getStepsToEscapeFromMaze.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +251,7 @@
 			children = (
 				B0F9597124086E2800D18466 /* getNumberOfTown.swift */,
 				B0F959732408797F00D18466 /* getNumberOfIslands.swift */,
+				B0F959752408833800D18466 /* getStepsToEscapeFromMaze.swift */,
 			);
 			path = FloodFill;
 			sourceTree = "<group>";
@@ -336,6 +339,7 @@
 				B039DED82401BD93006CE8DA /* getPatternFromText.swift in Sources */,
 				B04CCDF623F60D3300F039B8 /* Sorting.swift in Sources */,
 				B0F959692407864000D18466 /* sushiReview.swift in Sources */,
+				B0F959762408833800D18466 /* getStepsToEscapeFromMaze.swift in Sources */,
 				B08C804C23F4C1EF002A12AA /* Bag.swift in Sources */,
 				B0D4298623F3D9FB0092108D /* String+DPStringTool.swift in Sources */,
 				B0F959672405F81E00D18466 /* UF.swift in Sources */,

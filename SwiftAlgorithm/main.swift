@@ -131,4 +131,5 @@ import Foundation
 
 // Flood Fill
 //getNumberOfTown()
-getNumberOfIslands()
+//getNumberOfIslands()
+getStepsToEscapeFromMaze()
