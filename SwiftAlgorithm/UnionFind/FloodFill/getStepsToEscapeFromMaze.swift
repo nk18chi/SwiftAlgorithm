@@ -8,11 +8,6 @@
 
 import Foundation
 
-func example1() {
-    let res = [0,0,0,0]
-    print(res.filter { $0 > 0})
-}
-
 func getStepsToEscapeFromMaze() {
     // create input
     let firstLine: [Substring] = readLine()!.split(separator: " ")
