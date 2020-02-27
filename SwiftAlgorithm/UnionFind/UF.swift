@@ -45,9 +45,9 @@ public struct UF {
     /// - Returns: the canonical element of the set containing `p`
     public mutating func find(_ p: Int) -> Int {
         var root: Int = p
-        while (root != self.parent[root]) {
-            self.parent[root] = self.parent[self.parent[root]]
-            root = self.parent[root]
+        while (root != parent[root]) {
+            parent[root] = parent[parent[root]]
+            root = parent[root]
         }
         return root
     }
@@ -58,7 +58,7 @@ public struct UF {
     ///   - q: the other element
     /// - Returns: `true` if `p` and `q` are in the same set; `false` otherwise
     public mutating func connected(_ p: Int, _ q: Int) -> Bool {
-        return self.parent[p] == self.parent[q]
+        return parent[p] == parent[q]
     }
     
     /// Merges the set containing element `p` with the set containing
@@ -70,13 +70,13 @@ public struct UF {
         let pRoot: Int = find(p)
         let qRoot: Int = find(q)
         if (pRoot == qRoot) { return }
-        if (self.size[pRoot] < self.size[qRoot]) {
-            self.parent[pRoot] = qRoot
-            self.size[qRoot] += self.size[pRoot]
+        if (size[pRoot] < size[qRoot]) {
+            parent[pRoot] = qRoot
+            size[qRoot] += size[pRoot]
         } else {
-            self.parent[qRoot] = pRoot
-            self.size[pRoot] += self.size[qRoot]
+            parent[qRoot] = pRoot
+            size[pRoot] += size[qRoot]
         }
-        self.count -= 1
+        count -= 1
     }
 }
