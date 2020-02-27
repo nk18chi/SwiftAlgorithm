@@ -21,7 +21,7 @@ import Foundation
 /// has inverse Ackermann complexity (which is practically < 5 for 2^(2^(2^(2^16))) - undefined number).
 public struct UF {
     /// parent[i] = parent of i
-    var parent: [Int]
+    private var parent: [Int]
     /// size[i] = number of nodes in tree rooted at i
     private var size: [Int]
     /// number of components
@@ -77,5 +77,6 @@ public struct UF {
             self.parent[qRoot] = pRoot
             self.size[pRoot] += self.size[qRoot]
         }
+        self.count -= 1
     }
 }

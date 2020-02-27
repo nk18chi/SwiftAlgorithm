@@ -126,5 +126,5 @@ import Foundation
 //test_getNumberOfRealSushiRestaurants()
 
 // graph problem sets
-//getCyclicPermutation()
+getCyclicPermutation()
 //getRepeatingSequence()

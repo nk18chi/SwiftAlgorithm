@@ -13,16 +13,14 @@ func getCyclicPermutation() {
     for _ in 0..<testCases {
         let n: Int = Int(readLine()!)!
         let e = readLine()!.split(separator: " ")
-        var uf = UF(n + 1)
-        var count: Int = 0
+        var uf = UF(n)
         for j in 0..<n {
             if uf.connected(j, Int(e[j])! - 1) {
-                count += 1
                 continue
             }
             uf.union(j, Int(e[j])! - 1)
         }
-        print(count)
+        print(uf.count)
     }
 }
 
