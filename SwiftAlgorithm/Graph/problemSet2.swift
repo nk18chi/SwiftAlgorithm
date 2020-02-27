@@ -25,3 +25,27 @@ func getCyclicPermutation() {
         print(count)
     }
 }
+
+func getRepeatingSequence() {
+    let input: [Substring]  = readLine()!.split(separator: " ")
+    var A: Int = Int(input[0])!
+    let P: Int = Int(input[1])!
+    var dict: [Int:Int] = [:]
+    func helper(num: Int, power: Int) -> Int {
+        var quotient: Int = num
+        var sum: Double = 0
+        while(quotient != 0) {
+            sum += pow(Double(quotient % 10), Double(power))
+            quotient = quotient / 10
+        }
+        return Int(sum)
+    }
+    var index: Int = 0
+    while !dict.keys.contains(A) {
+        dict[A] = index
+        A = helper(num: A, power: P)
+        index += 1
+    }
+    print(dict[A]!)
+}
+
