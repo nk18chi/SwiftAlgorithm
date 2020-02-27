@@ -126,5 +126,9 @@ import Foundation
 //test_getNumberOfRealSushiRestaurants()
 
 // graph problem sets
-getCyclicPermutation()
+//getCyclicPermutation()
 //getRepeatingSequence()
+
+// Flood Fill
+//getNumberOfTown()
+getNumberOfIslands()

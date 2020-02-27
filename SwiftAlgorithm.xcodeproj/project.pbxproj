@@ -33,6 +33,8 @@
 		B0F959672405F81E00D18466 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959662405F81E00D18466 /* UF.swift */; };
 		B0F959692407864000D18466 /* sushiReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959682407864000D18466 /* sushiReview.swift */; };
 		B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9596B2407B3AE00D18466 /* problemSet2.swift */; };
+		B0F9597224086E2800D18466 /* getNumberOfTown.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9597124086E2800D18466 /* getNumberOfTown.swift */; };
+		B0F959742408797F00D18466 /* getNumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959732408797F00D18466 /* getNumberOfIslands.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -77,6 +79,9 @@
 		B0F959682407864000D18466 /* sushiReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushiReview.swift; sourceTree = "<group>"; };
 		B0F9596A2407A25300D18466 /* TestCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestCases; sourceTree = "<group>"; };
 		B0F9596B2407B3AE00D18466 /* problemSet2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = problemSet2.swift; sourceTree = "<group>"; };
+		B0F9596F24086B4400D18466 /* LCATestCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = LCATestCases; sourceTree = "<group>"; };
+		B0F9597124086E2800D18466 /* getNumberOfTown.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNumberOfTown.swift; sourceTree = "<group>"; };
+		B0F959732408797F00D18466 /* getNumberOfIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNumberOfIslands.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +136,7 @@
 		B039DED92401FEC2006CE8DA /* LowestCommonAncestor */ = {
 			isa = PBXGroup;
 			children = (
+				B0F9596F24086B4400D18466 /* LCATestCases */,
 				B039DEDA2401FEFC006CE8DA /* getLowestCommonAncestor.swift */,
 			);
 			path = LowestCommonAncestor;
@@ -232,9 +238,19 @@
 		B0F959652405F80B00D18466 /* UnionFind */ = {
 			isa = PBXGroup;
 			children = (
+				B0F9597024086E0000D18466 /* FloodFill */,
 				B0F959662405F81E00D18466 /* UF.swift */,
 			);
 			path = UnionFind;
+			sourceTree = "<group>";
+		};
+		B0F9597024086E0000D18466 /* FloodFill */ = {
+			isa = PBXGroup;
+			children = (
+				B0F9597124086E2800D18466 /* getNumberOfTown.swift */,
+				B0F959732408797F00D18466 /* getNumberOfIslands.swift */,
+			);
+			path = FloodFill;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -306,6 +322,7 @@
 				B08C804E23F4C20E002A12AA /* Queue.swift in Sources */,
 				B039DECE2400996C006CE8DA /* longestDiameter.swift in Sources */,
 				B0D4298423F37CFE0092108D /* Recursion.swift in Sources */,
+				B0F959742408797F00D18466 /* getNumberOfIslands.swift in Sources */,
 				B039DED62401BC9F006CE8DA /* getSortedElements.swift in Sources */,
 				B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */,
 				B039DED42401B30E006CE8DA /* TreeTraversal.swift in Sources */,
@@ -315,6 +332,7 @@
 				B08C805023F4C223002A12AA /* Stack.swift in Sources */,
 				B0D4297923F21FE40092108D /* main.swift in Sources */,
 				B039DEC923FF538B006CE8DA /* CustomPriorityQueue.swift in Sources */,
+				B0F9597224086E2800D18466 /* getNumberOfTown.swift in Sources */,
 				B039DED82401BD93006CE8DA /* getPatternFromText.swift in Sources */,
 				B04CCDF623F60D3300F039B8 /* Sorting.swift in Sources */,
 				B0F959692407864000D18466 /* sushiReview.swift in Sources */,
