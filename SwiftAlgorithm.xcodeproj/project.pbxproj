@@ -32,6 +32,7 @@
 		B0F959642405C98400D18466 /* dfs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959632405C98400D18466 /* dfs.swift */; };
 		B0F959672405F81E00D18466 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959662405F81E00D18466 /* UF.swift */; };
 		B0F959692407864000D18466 /* sushiReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959682407864000D18466 /* sushiReview.swift */; };
+		B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9596B2407B3AE00D18466 /* problemSet2.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -75,6 +76,7 @@
 		B0F959662405F81E00D18466 /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
 		B0F959682407864000D18466 /* sushiReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushiReview.swift; sourceTree = "<group>"; };
 		B0F9596A2407A25300D18466 /* TestCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestCases; sourceTree = "<group>"; };
+		B0F9596B2407B3AE00D18466 /* problemSet2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = problemSet2.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +141,7 @@
 			children = (
 				B039DEDD2404A416006CE8DA /* bfs.swift */,
 				B0F959632405C98400D18466 /* dfs.swift */,
+				B0F9596B2407B3AE00D18466 /* problemSet2.swift */,
 				B0F959682407864000D18466 /* sushiReview.swift */,
 				B0F9596A2407A25300D18466 /* TestCases */,
 			);
@@ -304,6 +307,7 @@
 				B039DECE2400996C006CE8DA /* longestDiameter.swift in Sources */,
 				B0D4298423F37CFE0092108D /* Recursion.swift in Sources */,
 				B039DED62401BC9F006CE8DA /* getSortedElements.swift in Sources */,
+				B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */,
 				B039DED42401B30E006CE8DA /* TreeTraversal.swift in Sources */,
 				B0D4298123F2208E0092108D /* Searching.swift in Sources */,
 				B039DEDE2404A416006CE8DA /* bfs.swift in Sources */,

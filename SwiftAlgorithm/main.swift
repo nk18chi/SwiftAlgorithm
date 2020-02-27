@@ -122,5 +122,8 @@ import Foundation
 //}
 
 // graph sushi review
-getNumberOfRealSushiRestaurants()
+//getNumberOfRealSushiRestaurants()
 //test_getNumberOfRealSushiRestaurants()
+
+// graph problem sets
+getCyclicPermutation()
