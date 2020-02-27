@@ -120,3 +120,7 @@ import Foundation
 //        }
 //    }
 //}
+
+// graph sushi review
+getNumberOfRealSushiRestaurants()
+//test_getNumberOfRealSushiRestaurants()

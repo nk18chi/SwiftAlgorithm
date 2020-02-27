@@ -29,8 +29,9 @@
 		B0D4298123F2208E0092108D /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298023F2208E0092108D /* Searching.swift */; };
 		B0D4298423F37CFE0092108D /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298323F37CFE0092108D /* Recursion.swift */; };
 		B0D4298623F3D9FB0092108D /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298523F3D9FB0092108D /* String+DPStringTool.swift */; };
-		B0F959622405C75100D18466 /* teamProject.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959612405C75100D18466 /* teamProject.swift */; };
 		B0F959642405C98400D18466 /* dfs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959632405C98400D18466 /* dfs.swift */; };
+		B0F959672405F81E00D18466 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959662405F81E00D18466 /* UF.swift */; };
+		B0F959692407864000D18466 /* sushiReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959682407864000D18466 /* sushiReview.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -70,8 +71,10 @@
 		B0D4298023F2208E0092108D /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
 		B0D4298323F37CFE0092108D /* Recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
 		B0D4298523F3D9FB0092108D /* String+DPStringTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DPStringTool.swift"; sourceTree = "<group>"; };
-		B0F959612405C75100D18466 /* teamProject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = teamProject.swift; sourceTree = "<group>"; };
 		B0F959632405C98400D18466 /* dfs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dfs.swift; sourceTree = "<group>"; };
+		B0F959662405F81E00D18466 /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
+		B0F959682407864000D18466 /* sushiReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushiReview.swift; sourceTree = "<group>"; };
+		B0F9596A2407A25300D18466 /* TestCases */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TestCases; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -134,9 +137,10 @@
 		B039DEDC2404A3F7006CE8DA /* Graph */ = {
 			isa = PBXGroup;
 			children = (
-				B0F959612405C75100D18466 /* teamProject.swift */,
 				B039DEDD2404A416006CE8DA /* bfs.swift */,
 				B0F959632405C98400D18466 /* dfs.swift */,
+				B0F959682407864000D18466 /* sushiReview.swift */,
+				B0F9596A2407A25300D18466 /* TestCases */,
 			);
 			path = Graph;
 			sourceTree = "<group>";
@@ -186,6 +190,7 @@
 		B0D4297723F21FE40092108D /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				B0F959652405F80B00D18466 /* UnionFind */,
 				B039DEDC2404A3F7006CE8DA /* Graph */,
 				B039DED92401FEC2006CE8DA /* LowestCommonAncestor */,
 				B039DED22401B2F7006CE8DA /* Tree */,
@@ -219,6 +224,14 @@
 				B08C804823F4B0F1002A12AA /* exercise_permutation.swift */,
 			);
 			path = Recursion;
+			sourceTree = "<group>";
+		};
+		B0F959652405F80B00D18466 /* UnionFind */ = {
+			isa = PBXGroup;
+			children = (
+				B0F959662405F81E00D18466 /* UF.swift */,
+			);
+			path = UnionFind;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -300,9 +313,10 @@
 				B039DEC923FF538B006CE8DA /* CustomPriorityQueue.swift in Sources */,
 				B039DED82401BD93006CE8DA /* getPatternFromText.swift in Sources */,
 				B04CCDF623F60D3300F039B8 /* Sorting.swift in Sources */,
+				B0F959692407864000D18466 /* sushiReview.swift in Sources */,
 				B08C804C23F4C1EF002A12AA /* Bag.swift in Sources */,
 				B0D4298623F3D9FB0092108D /* String+DPStringTool.swift in Sources */,
-				B0F959622405C75100D18466 /* teamProject.swift in Sources */,
+				B0F959672405F81E00D18466 /* UF.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
