@@ -105,4 +105,18 @@ import Foundation
 //getLowestCommonAncestor()
 
 //getNumberOfNoAssignedMember()
-dfsExersize2()
+//dfsExersize2()
+
+// graph exersize optional
+//getNumberOfNoAssignedMember()
+
+// Union find
+//let M: [[Int]] = [[1,1,0], [1,1,0], [0,0,1]]
+//var uf = UF(M.count)
+//for i in 0..<M.count {
+//    for j in i+1..<M.count {
+//        if M[i][j] == 1 {
+//            uf.union(i, j)
+//        }
+//    }
+//}
