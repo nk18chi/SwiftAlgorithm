@@ -37,6 +37,7 @@
 		B0F959742408797F00D18466 /* getNumberOfIslands.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959732408797F00D18466 /* getNumberOfIslands.swift */; };
 		B0F959762408833800D18466 /* getStepsToEscapeFromMaze.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959752408833800D18466 /* getStepsToEscapeFromMaze.swift */; };
 		B0F9597824088D9700D18466 /* tomatoFarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9597724088D9700D18466 /* tomatoFarm.swift */; };
+		B0F9597A2408D46000D18466 /* bridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959792408D46000D18466 /* bridges.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -86,6 +87,7 @@
 		B0F959732408797F00D18466 /* getNumberOfIslands.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getNumberOfIslands.swift; sourceTree = "<group>"; };
 		B0F959752408833800D18466 /* getStepsToEscapeFromMaze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getStepsToEscapeFromMaze.swift; sourceTree = "<group>"; };
 		B0F9597724088D9700D18466 /* tomatoFarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomatoFarm.swift; sourceTree = "<group>"; };
+		B0F959792408D46000D18466 /* bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bridges.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +257,7 @@
 				B0F959732408797F00D18466 /* getNumberOfIslands.swift */,
 				B0F959752408833800D18466 /* getStepsToEscapeFromMaze.swift */,
 				B0F9597724088D9700D18466 /* tomatoFarm.swift */,
+				B0F959792408D46000D18466 /* bridges.swift */,
 			);
 			path = FloodFill;
 			sourceTree = "<group>";
@@ -319,6 +322,7 @@
 			files = (
 				B04CCDF923F6152A00F039B8 /* showFIlesAndDirectories.swift in Sources */,
 				B0F959642405C98400D18466 /* dfs.swift in Sources */,
+				B0F9597A2408D46000D18466 /* bridges.swift in Sources */,
 				B08C804923F4B0F1002A12AA /* exercise_permutation.swift in Sources */,
 				B039DECC2400843C006CE8DA /* getParent.swift in Sources */,
 				B039DEBF23FCA74C006CE8DA /* Board.swift in Sources */,

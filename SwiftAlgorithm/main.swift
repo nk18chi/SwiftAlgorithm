@@ -122,7 +122,7 @@ import Foundation
 //}
 
 // graph sushi review
-getNumberOfRealSushiRestaurants()
+//getNumberOfRealSushiRestaurants()
 //test_getNumberOfRealSushiRestaurants()
 
 // graph problem sets
@@ -136,3 +136,4 @@ getNumberOfRealSushiRestaurants()
 
 //Problem Set 3 (Flood Fill)
 //tomatoFarm()
+bridges()
