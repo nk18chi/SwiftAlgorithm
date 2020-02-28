@@ -38,6 +38,7 @@
 		B0F959762408833800D18466 /* getStepsToEscapeFromMaze.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959752408833800D18466 /* getStepsToEscapeFromMaze.swift */; };
 		B0F9597824088D9700D18466 /* tomatoFarm.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9597724088D9700D18466 /* tomatoFarm.swift */; };
 		B0F9597A2408D46000D18466 /* bridges.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959792408D46000D18466 /* bridges.swift */; };
+		B0F9597C2409988000D18466 /* problem3.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F9597B2409988000D18466 /* problem3.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -88,6 +89,7 @@
 		B0F959752408833800D18466 /* getStepsToEscapeFromMaze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = getStepsToEscapeFromMaze.swift; sourceTree = "<group>"; };
 		B0F9597724088D9700D18466 /* tomatoFarm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tomatoFarm.swift; sourceTree = "<group>"; };
 		B0F959792408D46000D18466 /* bridges.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bridges.swift; sourceTree = "<group>"; };
+		B0F9597B2409988000D18466 /* problem3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = problem3.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -258,6 +260,7 @@
 				B0F959752408833800D18466 /* getStepsToEscapeFromMaze.swift */,
 				B0F9597724088D9700D18466 /* tomatoFarm.swift */,
 				B0F959792408D46000D18466 /* bridges.swift */,
+				B0F9597B2409988000D18466 /* problem3.swift */,
 			);
 			path = FloodFill;
 			sourceTree = "<group>";
@@ -333,6 +336,7 @@
 				B08C804E23F4C20E002A12AA /* Queue.swift in Sources */,
 				B039DECE2400996C006CE8DA /* longestDiameter.swift in Sources */,
 				B0D4298423F37CFE0092108D /* Recursion.swift in Sources */,
+				B0F9597C2409988000D18466 /* problem3.swift in Sources */,
 				B0F959742408797F00D18466 /* getNumberOfIslands.swift in Sources */,
 				B039DED62401BC9F006CE8DA /* getSortedElements.swift in Sources */,
 				B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */,
