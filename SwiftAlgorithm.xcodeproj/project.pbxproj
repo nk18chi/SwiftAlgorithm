@@ -203,6 +203,7 @@
 		B0D4297723F21FE40092108D /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				B0F9597024086E0000D18466 /* FloodFill */,
 				B0F959652405F80B00D18466 /* UnionFind */,
 				B039DEDC2404A3F7006CE8DA /* Graph */,
 				B039DED92401FEC2006CE8DA /* LowestCommonAncestor */,
@@ -242,7 +243,6 @@
 		B0F959652405F80B00D18466 /* UnionFind */ = {
 			isa = PBXGroup;
 			children = (
-				B0F9597024086E0000D18466 /* FloodFill */,
 				B0F959662405F81E00D18466 /* UF.swift */,
 			);
 			path = UnionFind;
