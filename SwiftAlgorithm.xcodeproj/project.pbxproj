@@ -29,6 +29,8 @@
 		B0D4298123F2208E0092108D /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298023F2208E0092108D /* Searching.swift */; };
 		B0D4298423F37CFE0092108D /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298323F37CFE0092108D /* Recursion.swift */; };
 		B0D4298623F3D9FB0092108D /* String+DPStringTool.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298523F3D9FB0092108D /* String+DPStringTool.swift */; };
+		B0E668E624106233006684EF /* topologicalSortAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E668E524106233006684EF /* topologicalSortAssignment.swift */; };
+		B0E668E824106240006684EF /* TopologicalSort.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0E668E724106240006684EF /* TopologicalSort.swift */; };
 		B0F959642405C98400D18466 /* dfs.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959632405C98400D18466 /* dfs.swift */; };
 		B0F959672405F81E00D18466 /* UF.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959662405F81E00D18466 /* UF.swift */; };
 		B0F959692407864000D18466 /* sushiReview.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0F959682407864000D18466 /* sushiReview.swift */; };
@@ -76,6 +78,8 @@
 		B0D4298023F2208E0092108D /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
 		B0D4298323F37CFE0092108D /* Recursion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Recursion.swift; sourceTree = "<group>"; };
 		B0D4298523F3D9FB0092108D /* String+DPStringTool.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+DPStringTool.swift"; sourceTree = "<group>"; };
+		B0E668E524106233006684EF /* topologicalSortAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = topologicalSortAssignment.swift; sourceTree = "<group>"; };
+		B0E668E724106240006684EF /* TopologicalSort.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TopologicalSort.swift; sourceTree = "<group>"; };
 		B0F959632405C98400D18466 /* dfs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dfs.swift; sourceTree = "<group>"; };
 		B0F959662405F81E00D18466 /* UF.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UF.swift; sourceTree = "<group>"; };
 		B0F959682407864000D18466 /* sushiReview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sushiReview.swift; sourceTree = "<group>"; };
@@ -203,6 +207,7 @@
 		B0D4297723F21FE40092108D /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				B0E668E42410621B006684EF /* DAG */,
 				B0F9597024086E0000D18466 /* FloodFill */,
 				B0F959652405F80B00D18466 /* UnionFind */,
 				B039DEDC2404A3F7006CE8DA /* Graph */,
@@ -238,6 +243,15 @@
 				B08C804823F4B0F1002A12AA /* exercise_permutation.swift */,
 			);
 			path = Recursion;
+			sourceTree = "<group>";
+		};
+		B0E668E42410621B006684EF /* DAG */ = {
+			isa = PBXGroup;
+			children = (
+				B0E668E724106240006684EF /* TopologicalSort.swift */,
+				B0E668E524106233006684EF /* topologicalSortAssignment.swift */,
+			);
+			path = DAG;
 			sourceTree = "<group>";
 		};
 		B0F959652405F80B00D18466 /* UnionFind */ = {
@@ -333,10 +347,12 @@
 				B039DED62401BC9F006CE8DA /* getSortedElements.swift in Sources */,
 				B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */,
 				B039DED42401B30E006CE8DA /* TreeTraversal.swift in Sources */,
+				B0E668E624106233006684EF /* topologicalSortAssignment.swift in Sources */,
 				B0D4298123F2208E0092108D /* Searching.swift in Sources */,
 				B039DEDE2404A416006CE8DA /* bfs.swift in Sources */,
 				B039DEDB2401FEFC006CE8DA /* getLowestCommonAncestor.swift in Sources */,
 				B08C805023F4C223002A12AA /* Stack.swift in Sources */,
+				B0E668E824106240006684EF /* TopologicalSort.swift in Sources */,
 				B0D4297923F21FE40092108D /* main.swift in Sources */,
 				B039DEC923FF538B006CE8DA /* CustomPriorityQueue.swift in Sources */,
 				B0F9597224086E2800D18466 /* getNumberOfTown.swift in Sources */,
