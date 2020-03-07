@@ -136,4 +136,13 @@ import Foundation
 
 //Problem Set 3 (Flood Fill)
 //tomatoFarm()
-bridges()
+//bridges()
+
+
+// greedy
+//leastInterval(["A","A","A","B","C","D","E"], 2)
+//leastInterval(["A","A","A","B","B","B"], 2)
+//canCompleteCircuit([5,1,2,3,4], [4,4,1,5,1])
+//canCompleteCircuit([5,1,2,3,4], [4,4,1,5,1])
+//partitionLabels("ababcbacadefegdehijhklij")
+scheduleCourse([[7,17],[3,12],[10,20],[9,10],[5,20],[10,19],[4,18]])
