@@ -28,6 +28,9 @@
 		B0BA46482416F07E009DBA77 /* dijkstra.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA46472416F07E009DBA77 /* dijkstra.swift */; };
 		B0BA464A241843D7009DBA77 /* bellmanFord.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA4649241843D7009DBA77 /* bellmanFord.swift */; };
 		B0BA464C2418A726009DBA77 /* MinimumCostFlow.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA464B2418A726009DBA77 /* MinimumCostFlow.swift */; };
+		B0BA464F24197E9A009DBA77 /* test.sh in Sources */ = {isa = PBXBuildFile; fileRef = B0BA464E24197E9A009DBA77 /* test.sh */; };
+		B0BA465224199777009DBA77 /* prettyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA465124199777009DBA77 /* prettyNumber.swift */; };
+		B0BA46542419A5C7009DBA77 /* makeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA46532419A5C7009DBA77 /* makeOne.swift */; };
 		B0D4297923F21FE40092108D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4297823F21FE40092108D /* main.swift */; };
 		B0D4298123F2208E0092108D /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298023F2208E0092108D /* Searching.swift */; };
 		B0D4298423F37CFE0092108D /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298323F37CFE0092108D /* Recursion.swift */; };
@@ -80,6 +83,9 @@
 		B0BA46472416F07E009DBA77 /* dijkstra.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dijkstra.swift; sourceTree = "<group>"; };
 		B0BA4649241843D7009DBA77 /* bellmanFord.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = bellmanFord.swift; sourceTree = "<group>"; };
 		B0BA464B2418A726009DBA77 /* MinimumCostFlow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MinimumCostFlow.swift; sourceTree = "<group>"; };
+		B0BA464E24197E9A009DBA77 /* test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
+		B0BA465124199777009DBA77 /* prettyNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prettyNumber.swift; sourceTree = "<group>"; };
+		B0BA46532419A5C7009DBA77 /* makeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeOne.swift; sourceTree = "<group>"; };
 		B0D4297523F21FE40092108D /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D4297823F21FE40092108D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B0D4298023F2208E0092108D /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
@@ -205,9 +211,27 @@
 			path = ShortestPath;
 			sourceTree = "<group>";
 		};
+		B0BA464D24197E6A009DBA77 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				B0BA464E24197E9A009DBA77 /* test.sh */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
+		B0BA465024199754009DBA77 /* DynamicProgramming */ = {
+			isa = PBXGroup;
+			children = (
+				B0BA465124199777009DBA77 /* prettyNumber.swift */,
+				B0BA46532419A5C7009DBA77 /* makeOne.swift */,
+			);
+			path = DynamicProgramming;
+			sourceTree = "<group>";
+		};
 		B0D4296C23F21FE40092108D = {
 			isa = PBXGroup;
 			children = (
+				B0BA464D24197E6A009DBA77 /* Test */,
 				B0D4297723F21FE40092108D /* SwiftAlgorithm */,
 				B0D4297623F21FE40092108D /* Products */,
 			);
@@ -224,6 +248,7 @@
 		B0D4297723F21FE40092108D /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				B0BA465024199754009DBA77 /* DynamicProgramming */,
 				B0BA46462416F04C009DBA77 /* ShortestPath */,
 				B0E668E9241062BE006684EF /* Greedy */,
 				B0E668E42410621B006684EF /* DAG */,
@@ -377,13 +402,16 @@
 				B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */,
 				B039DED42401B30E006CE8DA /* TreeTraversal.swift in Sources */,
 				B0E668E624106233006684EF /* topologicalSortAssignment.swift in Sources */,
+				B0BA465224199777009DBA77 /* prettyNumber.swift in Sources */,
 				B0D4298123F2208E0092108D /* Searching.swift in Sources */,
 				B039DEDE2404A416006CE8DA /* bfs.swift in Sources */,
+				B0BA46542419A5C7009DBA77 /* makeOne.swift in Sources */,
 				B0E668EC241062D6006684EF /* GreedyAssignment.swift in Sources */,
 				B039DEDB2401FEFC006CE8DA /* getLowestCommonAncestor.swift in Sources */,
 				B08C805023F4C223002A12AA /* Stack.swift in Sources */,
 				B0BA464A241843D7009DBA77 /* bellmanFord.swift in Sources */,
 				B0E668E824106240006684EF /* TopologicalSort.swift in Sources */,
+				B0BA464F24197E9A009DBA77 /* test.sh in Sources */,
 				B0BA464C2418A726009DBA77 /* MinimumCostFlow.swift in Sources */,
 				B0D4297923F21FE40092108D /* main.swift in Sources */,
 				B039DEC923FF538B006CE8DA /* CustomPriorityQueue.swift in Sources */,

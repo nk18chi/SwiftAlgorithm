@@ -146,4 +146,6 @@ import Foundation
 //canCompleteCircuit([5,1,2,3,4], [4,4,1,5,1])
 //partitionLabels("ababcbacadefegdehijhklij")
 //scheduleCourse([[7,17],[3,12],[10,20],[9,10],[5,20],[10,19],[4,18]])
-minimumCostFlow()
+//minimumCostFlow()
+
+prettyNumber()
