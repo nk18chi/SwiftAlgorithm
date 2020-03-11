@@ -21,7 +21,7 @@ import Foundation
 /// has inverse Ackermann complexity (which is practically < 5 for 2^(2^(2^(2^16))) - undefined number).
 public struct UF {
     /// parent[i] = parent of i
-    private var parent: [Int]
+    public var parent: [Int]
     /// size[i] = number of nodes in tree rooted at i
     private var size: [Int]
     /// number of components
@@ -58,7 +58,7 @@ public struct UF {
     ///   - q: the other element
     /// - Returns: `true` if `p` and `q` are in the same set; `false` otherwise
     public mutating func connected(_ p: Int, _ q: Int) -> Bool {
-        return parent[p] == parent[q]
+        return find(p) == find(q)
     }
     
     /// Merges the set containing element `p` with the set containing
