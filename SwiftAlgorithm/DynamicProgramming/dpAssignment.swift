@@ -8,6 +8,75 @@
 
 import Foundation
 
+// 1. Climbing Stairs
+// Runtime: 0 ms, faster than 100.00% of Swift online submissions for Climbing Stairs.
+// Memory Usage: 20.8 MB, less than 20.00% of Swift online submissions for Climbing Stairs.
+func climbStairs(_ n: Int) -> Int {
+    if n < 4 { return n }
+    var res: [Int] = [2, 3]
+    for _ in 4..<n {
+        let prev: Int = res.removeFirst()
+        res.append(res[0] + prev)
+    }
+    return res[0] + res[1]
+}
+
+// 2. Make One
+func makeOne(_ n: Int) -> Int {
+    var dp: [Int] = [Int](repeating: 0, count: n + 1)
+    dp[1] = 0
+    for i in 2...n {
+        var list: [Int] = [1, 1, 1]
+        list[0] += dp[i-1]
+        list[1] += i % 2 == 0 ? dp[i/2] : Int.max - 1
+        list[2] += i % 3 == 0 ? dp[i/3] : Int.max - 1
+        dp[i] = list.min()!
+    }
+    return dp[n]
+}
+
+// 3. 2 x N tiles
+func two_nTiles(_ n: Int) -> Int {
+    var dp: [Int] = [Int](repeating: 0, count: n + 1)
+    dp[1] = 1
+    dp[2] = 2
+    for i in 3...n {
+        dp[i] = dp[i-1] + dp[i-2]
+    }
+    return dp[n]
+}
+
+// 4. 2 x N tiles - 2
+func two_nTiles_2(_ n: Int) -> Int {
+    var dp: [Int] = [Int](repeating: 0, count: n + 1)
+    dp[1] = 1
+    dp[2] = 3
+    for i in 3...n {
+        dp[i] = dp[i-1] + dp[i-2] * 2
+    }
+    return dp[n]
+}
+
+// 5. One Two Three
+func oneTwoThree() {
+    func run(_ n: Int) {
+        var dp: [Int] = [Int](repeating: 0, count: n + 1)
+        dp[1] = 1
+        dp[2] = 2
+        dp[3] = 4
+        for i in 4...n {
+            dp[i] = dp[i-1] + dp[i-2] + dp[i-3]
+        }
+        print(dp[n])
+    }
+    
+    let tests: Int = Int(readLine()!)!
+    for _ in 0..<tests {
+        let n: Int = Int(readLine()!)!
+        run(n)
+    }
+}
+
 // 6. Pretty Number
 func prettyNumber() {
     let n: Int = Int(readLine()!)!

@@ -148,4 +148,9 @@ import Foundation
 //scheduleCourse([[7,17],[3,12],[10,20],[9,10],[5,20],[10,19],[4,18]])
 //minimumCostFlow()
 
-prettyNumber()
+//prettyNumber()
+
+//print(climbStairs(6))
+//print(makeOne(10))
+//print(two_nTiles_2(12))
+oneTwoThree()
