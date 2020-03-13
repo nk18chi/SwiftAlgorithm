@@ -31,6 +31,8 @@
 		B0BA464F24197E9A009DBA77 /* test.sh in Sources */ = {isa = PBXBuildFile; fileRef = B0BA464E24197E9A009DBA77 /* test.sh */; };
 		B0BA465224199777009DBA77 /* prettyNumber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA465124199777009DBA77 /* prettyNumber.swift */; };
 		B0BA46542419A5C7009DBA77 /* makeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA46532419A5C7009DBA77 /* makeOne.swift */; };
+		B0BA4666241C2160009DBA77 /* dpAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA4665241C2160009DBA77 /* dpAssignment.swift */; };
+		B0BA4668241C2186009DBA77 /* shortestPathAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA4667241C2186009DBA77 /* shortestPathAssignment.swift */; };
 		B0D4297923F21FE40092108D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4297823F21FE40092108D /* main.swift */; };
 		B0D4298123F2208E0092108D /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298023F2208E0092108D /* Searching.swift */; };
 		B0D4298423F37CFE0092108D /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298323F37CFE0092108D /* Recursion.swift */; };
@@ -86,6 +88,9 @@
 		B0BA464E24197E9A009DBA77 /* test.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = test.sh; sourceTree = "<group>"; };
 		B0BA465124199777009DBA77 /* prettyNumber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = prettyNumber.swift; sourceTree = "<group>"; };
 		B0BA46532419A5C7009DBA77 /* makeOne.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeOne.swift; sourceTree = "<group>"; };
+		B0BA4662241C20AA009DBA77 /* testTime.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = testTime.sh; sourceTree = "<group>"; };
+		B0BA4665241C2160009DBA77 /* dpAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dpAssignment.swift; sourceTree = "<group>"; };
+		B0BA4667241C2186009DBA77 /* shortestPathAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortestPathAssignment.swift; sourceTree = "<group>"; };
 		B0D4297523F21FE40092108D /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D4297823F21FE40092108D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B0D4298023F2208E0092108D /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
@@ -207,6 +212,7 @@
 			children = (
 				B0BA46472416F07E009DBA77 /* dijkstra.swift */,
 				B0BA4649241843D7009DBA77 /* bellmanFord.swift */,
+				B0BA4667241C2186009DBA77 /* shortestPathAssignment.swift */,
 			);
 			path = ShortestPath;
 			sourceTree = "<group>";
@@ -215,6 +221,7 @@
 			isa = PBXGroup;
 			children = (
 				B0BA464E24197E9A009DBA77 /* test.sh */,
+				B0BA4662241C20AA009DBA77 /* testTime.sh */,
 			);
 			path = Test;
 			sourceTree = "<group>";
@@ -224,6 +231,7 @@
 			children = (
 				B0BA465124199777009DBA77 /* prettyNumber.swift */,
 				B0BA46532419A5C7009DBA77 /* makeOne.swift */,
+				B0BA4665241C2160009DBA77 /* dpAssignment.swift */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -388,6 +396,7 @@
 				B0F959642405C98400D18466 /* dfs.swift in Sources */,
 				B08C804923F4B0F1002A12AA /* exercise_permutation.swift in Sources */,
 				B039DECC2400843C006CE8DA /* getParent.swift in Sources */,
+				B0BA4668241C2186009DBA77 /* shortestPathAssignment.swift in Sources */,
 				B039DEBF23FCA74C006CE8DA /* Board.swift in Sources */,
 				B039DEC023FCA74C006CE8DA /* QueensSolver.swift in Sources */,
 				B039DED02400B0F7006CE8DA /* testTreeQuiz.swift in Sources */,
@@ -402,6 +411,7 @@
 				B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */,
 				B039DED42401B30E006CE8DA /* TreeTraversal.swift in Sources */,
 				B0E668E624106233006684EF /* topologicalSortAssignment.swift in Sources */,
+				B0BA4666241C2160009DBA77 /* dpAssignment.swift in Sources */,
 				B0BA465224199777009DBA77 /* prettyNumber.swift in Sources */,
 				B0D4298123F2208E0092108D /* Searching.swift in Sources */,
 				B039DEDE2404A416006CE8DA /* bfs.swift in Sources */,
