@@ -2,9 +2,9 @@
 
 export TIMEFORMAT="%E"
 
-SOURCE_FILE_PATH='MinimumCostFlow.swift' # メインのソースファイル名
-RELATED_FILES_PATH='' # 関連ソースのファイル名（スペース区切り）
-TEST_PATH='./TestCases/' # テストデータファイルのパス
+SOURCE_FILE_PATH='../SwiftAlgorithm/main.swift' # メインのソースファイル名
+RELATED_FILES_PATH='../SwiftAlgorithm/UnionFind/UF.swift ../SwiftAlgorithm/Greedy/MinimumCostFlow.swift' #  関連ソースのファイル名（スペース区切り）
+TEST_PATH='/Users/naoki/Desktop/mcf/' # テストデータファイルのパス
 
 # コンパイル
 swiftc -O $SOURCE_FILE_PATH $RELATED_FILES_PATH
