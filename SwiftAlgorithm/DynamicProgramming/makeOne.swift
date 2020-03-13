@@ -8,7 +8,7 @@
 
 import Foundation
 
-func makeOne(_ x: Int) -> Int {
+func _makeOne(_ x: Int) -> Int {
     var d = [Int](repeating: 0, count: x + 1)
     for i in 2...x {
         d[i] = d[i - 1] + 1

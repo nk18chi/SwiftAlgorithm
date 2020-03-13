@@ -8,7 +8,7 @@
 
 import Foundation
 
-func prettyNumber() {
+func _prettyNumber() {
     let n: Int = Int(readLine()!)!
     var dp: [[Int]] = [[Int]](repeating: [Int](repeating: 0, count: 10), count: n)
     for i in 1...9 {
