@@ -9,115 +9,119 @@
 import Foundation
 
 func minimumCostFlow() {
+    struct Edge {
+        let u: Int
+        let v: Int
+        let cost: Int
+        let isActive: Bool
+    }
     // create graph
     let firstList: [Int] = readLine()!.split(separator: " ").compactMap { Int($0) }
     let n: Int = firstList[0]
     let m: Int = firstList[1]
     let d: Int = firstList[2]
-    var input: [[Int]] = []
+    var edges: [Edge] = []
     for i in 0..<m {
-        var line: [Int] = readLine()!.split(separator: " ").compactMap { Int($0) }
-        let isActive: Int = i < n - 1 ? 1 : 0
-        line.append(isActive)
-        input.append(line)
+        let line: [Int] = readLine()!.split(separator: " ").compactMap { Int($0) }
+        let isActive: Bool = i < n - 1 ? true : false
+        let e: Edge = Edge(u: line[0], v: line[1], cost: line[2], isActive: isActive)
+        edges.append(e)
     }
-    input.sort { ($0[2], $1[3]) < ($1[2], $0[3]) }
+    edges.sort { $0.cost < $1.cost }
     
-    var uf = UF2(n + 1)
-    var needActivePipeCount = 0
-    var needInActivePipeCount = n - 1
-    for i in 0..<input.count {
-        let e = input[i]
-        if uf.connected(e[0], e[1]) { continue }
-        if i == n - 1 {
-            var last: [Int] = input[i]
-            var lastIndex: Int = i
-            while input[lastIndex][2] <= d && input[lastIndex][3] == 0 && lastIndex < input.count {
-                if uf.connected(e[0], e[1]) { last = input[lastIndex] }
-                lastIndex += 1
-            }
-            uf.union(last[0], last[1])
-            if last[3] == 0 {
-                needActivePipeCount += 1
-            } else {
-                needInActivePipeCount -= 1
-            }
-            break
+    var uf = UF(n + 1)
+    var days : Int = 0
+    var i: Int = 0
+    var c: Int = 0
+    while i < m {
+        guard c < n - 1 else { break }
+        let e = edges[i]
+        if !uf.connected(e.u, e.v) {
+            uf.union(e.u, e.v)
+            if !e.isActive { days += 1 }
+            c += 1
         }
-        
-        uf.union(e[0], e[1])
-        if e[3] == 0 {
-            needActivePipeCount += 1
-        } else {
-            needInActivePipeCount -= 1
-        }
+        i += 1
     }
     
-    print(max(needActivePipeCount, needInActivePipeCount))
+    let max: Int = edges[i - 1].cost
+    if !edges[i - 1].isActive {
+        var uf2 = UF(n + 1)
+        for e in edges {
+            if uf2.connected(e.u, e.v) { continue }
+            if e.cost < max || e.cost == max && e.isActive {
+                uf2.union(e.u, e.v)
+            } else if e.isActive && e.cost <= d {
+                days -= 1
+                break
+            }
+        }
+    }
+    
+    print(days)
 }
 
 
 
-public struct UF2 {
-    /// parent[i] = parent of i
-    public var parent: [Int]
-    /// size[i] = number of nodes in tree rooted at i
-    private var size: [Int]
-    /// number of components
-    private(set) var count: Int
-
-    /// Initializes an empty union-find data structure with **n** elements
-    /// **0** through **n-1**.
-    /// Initially, each elements is in its own set.
-    /// - Parameter n: the number of elements
-    public init(_ n: Int) {
-        self.count = n
-        self.size = [Int](repeating: 1, count: n)
-        self.parent = [Int](repeating: 0, count: n)
-        for i in 0..<n {
-            self.parent[i] = i
-        }
-    }
-
-    /// Returns the canonical element(root) of the set containing element `p`.
-    /// - Parameter p: an element
-    /// - Returns: the canonical element of the set containing `p`
-    public mutating func find(_ p: Int) -> Int {
-        var root: Int = p
-        while (root != parent[root]) {
-            parent[root] = parent[parent[root]]
-            root = parent[root]
-        }
-        return root
-    }
-
-    /// Returns `true` if the two elements are in the same set.
-    /// - Parameters:
-    ///   - p: one elememt
-    ///   - q: the other element
-    /// - Returns: `true` if `p` and `q` are in the same set; `false` otherwise
-    public mutating func connected(_ p: Int, _ q: Int) -> Bool {
-        return find(p) == find(q)
-    }
-
-    /// Merges the set containing element `p` with the set containing
-    /// element `q`
-    /// - Parameters:
-    ///   - p: one element
-    ///   - q: the other element
-    public mutating func union(_ p: Int, _ q: Int) {
-        let pRoot: Int = find(p)
-        let qRoot: Int = find(q)
-        if (pRoot == qRoot) { return }
-        if (size[pRoot] < size[qRoot]) {
-            parent[pRoot] = qRoot
-            size[qRoot] += size[pRoot]
-        } else {
-            parent[qRoot] = pRoot
-            size[pRoot] += size[qRoot]
-        }
-        count -= 1
-    }
-}
-
-//minimumCostFlow()
+//public struct UF2 {
+//    /// parent[i] = parent of i
+//    public var parent: [Int]
+//    /// size[i] = number of nodes in tree rooted at i
+//    private var size: [Int]
+//    /// number of components
+//    private(set) var count: Int
+//
+//    /// Initializes an empty union-find data structure with **n** elements
+//    /// **0** through **n-1**.
+//    /// Initially, each elements is in its own set.
+//    /// - Parameter n: the number of elements
+//    public init(_ n: Int) {
+//        self.count = n
+//        self.size = [Int](repeating: 1, count: n)
+//        self.parent = [Int](repeating: 0, count: n)
+//        for i in 0..<n {
+//            self.parent[i] = i
+//        }
+//    }
+//
+//    /// Returns the canonical element(root) of the set containing element `p`.
+//    /// - Parameter p: an element
+//    /// - Returns: the canonical element of the set containing `p`
+//    public mutating func find(_ p: Int) -> Int {
+//        var root: Int = p
+//        while (root != parent[root]) {
+//            parent[root] = parent[parent[root]]
+//            root = parent[root]
+//        }
+//        return root
+//    }
+//
+//    /// Returns `true` if the two elements are in the same set.
+//    /// - Parameters:
+//    ///   - p: one elememt
+//    ///   - q: the other element
+//    /// - Returns: `true` if `p` and `q` are in the same set; `false` otherwise
+//    public mutating func connected(_ p: Int, _ q: Int) -> Bool {
+//        return find(p) == find(q)
+//    }
+//
+//    /// Merges the set containing element `p` with the set containing
+//    /// element `q`
+//    /// - Parameters:
+//    ///   - p: one element
+//    ///   - q: the other element
+//    public mutating func union(_ p: Int, _ q: Int) {
+//        let pRoot: Int = find(p)
+//        let qRoot: Int = find(q)
+//        if (pRoot == qRoot) { return }
+//        if (size[pRoot] < size[qRoot]) {
+//            parent[pRoot] = qRoot
+//            size[qRoot] += size[pRoot]
+//        } else {
+//            parent[qRoot] = pRoot
+//            size[pRoot] += size[qRoot]
+//        }
+//        count -= 1
+//    }
+//}
+//
