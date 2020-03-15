@@ -153,4 +153,7 @@ import Foundation
 //print(climbStairs(6))
 //print(makeOne(10))
 //print(two_nTiles_2(12))
-oneTwoThree()
+//oneTwoThree()
+//print(judgeSquareSum2(2624))
+//print(getMaxinumCandies())
+print(numDecodings("1231010"))

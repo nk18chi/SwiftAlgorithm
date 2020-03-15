@@ -127,3 +127,105 @@ func lengthOfLIS(_ nums: [Int]) -> Int {
     }
     return dp.max()!
 }
+
+// 9. Sum of Square numbers
+// https://leetcode.com/problems/sum-of-square-numbers/
+// Runtime: 8 ms, faster than 76.92% of Swift online submissions for Sum of Square Numbers.
+// Memory Usage: 20.7 MB, less than 100.00% of Swift online submissions for Sum of Square Numbers.
+func judgeSquareSum(_ c: Int) -> Bool {
+    var lft: Int = 0
+    var rgt: Int = Int(sqrt(Double(c)))
+    
+    while lft <= rgt {
+        let res: Int = lft * lft + rgt * rgt
+        if res == c { return true }
+        if res < c { lft += 1 }
+        else { rgt -= 1 }
+    }
+    
+    return false
+}
+
+// 10. Sum of Square numbers - 2
+func judgeSquareSum2(_ c: Int) -> Int {
+    var dp: [Int] = [Int](repeating: 0, count: c + 1)
+    dp[1] = 1
+    for i in 2...c {
+        let root: Int = Int(sqrt(Double(i)))
+        var list: [Int] = [Int](repeating: Int.max, count: root + 1)
+        for j in 1...root {
+            let v: Int = i - j * j
+            list[j] = dp[v] + 1
+        }
+        dp[i] = list.min()!
+    }
+    return dp[c]
+}
+
+// 11. Pokemon
+func getMaxinumCandies() -> Int {
+    let input: [Int] = readLine()!.split(separator: " ").compactMap { Int($0) }
+    let n: Int = input[0]
+    let m: Int = input[1]
+    var dp: [[Int]] = [[Int]](repeating: [Int](repeating: 0, count: m), count: n)
+    
+    for i in 0..<n {
+        let squares = readLine()!.split(separator: " ").compactMap { Int($0) }
+        for j in 0..<m {
+            let up: Int = i == 0 ? Int.min : dp[i-1][j]
+            let left: Int = j == 0 ? Int.min : dp[i][j-1]
+            let maxVal: Int = max(up, left) == Int.min ? 0 : max(up, left)
+            dp[i][j] = maxVal + squares[j]
+        }
+    }
+    
+    return dp[n-1][m-1]
+}
+
+// 12. Decode Ways
+// Runtime: 8 ms, faster than 87.22% of Swift online submissions for Decode Ways.
+// Memory Usage: 21.2 MB, less than 100.00% of Swift online submissions for Decode Ways.
+func numDecodings(_ s: String) -> Int {
+    let s = Array(s)
+    var dp: [Int] = [Int](repeating: 0, count: s.count)
+    if s[0] == "0" { return 0 }
+    dp[0] = 1
+    for i in 1..<s.count {
+        dp[i] += dp[i-1]
+        let prev: Int = Int(String(s[i-1]))!
+        let cur: Int = Int(String(s[i]))!
+        if cur == 0 {
+            if prev == 1 || prev == 2 {
+                dp[i] = i - 2 < 0 ? 1 : dp[i-2]
+                continue
+            }
+            return 0
+        }
+        if prev == 1 || prev == 2 && cur < 7 {
+            dp[i] += i - 2 < 0 ? 1 : dp[i-2]
+        }
+    }
+    
+    return dp[s.count - 1]
+}
+
+// 13. Maximum Subarray
+// Runtime: 32 ms, faster than 99.66% of Swift online submissions for Maximum Subarray.
+// Memory Usage: 21.3 MB, less than 16.67% of Swift online submissions for Maximum Subarray.
+func maxSubArray(_ nums: [Int]) -> Int {
+    var dp: Int = nums[0]
+    var maxVal: Int = nums[0]
+    for i in 1..<nums.count {
+        dp = nums[i] > dp + nums[i] ? nums[i] : dp + nums[i]
+        maxVal = max(maxVal, dp)
+    }
+    
+    return maxVal
+}
+
+
+// 14. Edit Distance (optional)
+// https://leetcode.com/problems/edit-distance/
+
+// 15. Text Justification (optional)
+// https://leetcode.com/problems/text-justification/
