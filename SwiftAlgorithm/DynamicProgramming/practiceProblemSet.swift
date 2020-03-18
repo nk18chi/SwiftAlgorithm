@@ -9,9 +9,9 @@
 import Foundation
 
 // Problem 1 - Equal Subset Sub Partition
-func equalSubsetSubPartitio() -> Bool {
-    let input: String = readLine()!.replacingOccurrences(of: "\\{|\\}|,", with: "", options: .regularExpression)
-    let array: [Int] = input.split(separator: " ").compactMap { Int($0) }
+func equalSubsetSubPartitio(_ array: [Int]) -> Bool {
+//    let input: String = readLine()!.replacingOccurrences(of: "\\{|\\}|,", with: "", options: .regularExpression)
+//    let array: [Int] = input.split(separator: " ").compactMap { Int($0) }
     let sum: Int = array.reduce(0, +)
     
     if sum % 2 == 1 { return false }
@@ -30,8 +30,8 @@ func equalSubsetSubPartitio() -> Bool {
 }
 
 // Problem 1 - Longest Palindrome Subsequences
-func longestPalindromeSubsequence() -> Int {
-    let input: String = readLine()!.replacingOccurrences(of: "\"", with: "")
+func longestPalindromeSubsequence(_ input: String) -> Int {
+//    let input: String = readLine()!.replacingOccurrences(of: "\"", with: "")
     if input.count < 2 { return input.count}
     
     var set: Set<String> = []
