@@ -33,6 +33,7 @@
 		B0BA46542419A5C7009DBA77 /* makeOne.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA46532419A5C7009DBA77 /* makeOne.swift */; };
 		B0BA4666241C2160009DBA77 /* dpAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA4665241C2160009DBA77 /* dpAssignment.swift */; };
 		B0BA4668241C2186009DBA77 /* shortestPathAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA4667241C2186009DBA77 /* shortestPathAssignment.swift */; };
+		B0BA466A24217BF6009DBA77 /* practiceProblemSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA466924217BF6009DBA77 /* practiceProblemSet.swift */; };
 		B0D4297923F21FE40092108D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4297823F21FE40092108D /* main.swift */; };
 		B0D4298123F2208E0092108D /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298023F2208E0092108D /* Searching.swift */; };
 		B0D4298423F37CFE0092108D /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298323F37CFE0092108D /* Recursion.swift */; };
@@ -91,6 +92,7 @@
 		B0BA4662241C20AA009DBA77 /* testTime.sh */ = {isa = PBXFileReference; lastKnownFileType = text.script.sh; path = testTime.sh; sourceTree = "<group>"; };
 		B0BA4665241C2160009DBA77 /* dpAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dpAssignment.swift; sourceTree = "<group>"; };
 		B0BA4667241C2186009DBA77 /* shortestPathAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortestPathAssignment.swift; sourceTree = "<group>"; };
+		B0BA466924217BF6009DBA77 /* practiceProblemSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceProblemSet.swift; sourceTree = "<group>"; };
 		B0D4297523F21FE40092108D /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D4297823F21FE40092108D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B0D4298023F2208E0092108D /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
@@ -232,6 +234,7 @@
 				B0BA465124199777009DBA77 /* prettyNumber.swift */,
 				B0BA46532419A5C7009DBA77 /* makeOne.swift */,
 				B0BA4665241C2160009DBA77 /* dpAssignment.swift */,
+				B0BA466924217BF6009DBA77 /* practiceProblemSet.swift */,
 			);
 			path = DynamicProgramming;
 			sourceTree = "<group>";
@@ -431,6 +434,7 @@
 				B0F959692407864000D18466 /* sushiReview.swift in Sources */,
 				B0F959762408833800D18466 /* getStepsToEscapeFromMaze.swift in Sources */,
 				B08C804C23F4C1EF002A12AA /* Bag.swift in Sources */,
+				B0BA466A24217BF6009DBA77 /* practiceProblemSet.swift in Sources */,
 				B0D4298623F3D9FB0092108D /* String+DPStringTool.swift in Sources */,
 				B0F959672405F81E00D18466 /* UF.swift in Sources */,
 			);

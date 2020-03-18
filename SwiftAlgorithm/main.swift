@@ -156,4 +156,6 @@ import Foundation
 //oneTwoThree()
 //print(judgeSquareSum2(2624))
 //print(getMaxinumCandies())
-print(numDecodings("1231010"))
+//print(numDecodings("1231010"))
+
+print(longestPalindromeSubsequence())
