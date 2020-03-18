@@ -30,31 +30,51 @@ func equalSubsetSubPartitio(_ array: [Int]) -> Bool {
 }
 
 // Problem 1 - Longest Palindrome Subsequences
+// first solution
+//func longestPalindromeSubsequence(_ input: String) -> Int {
+////    let input: String = readLine()!.replacingOccurrences(of: "\"", with: "")
+//    if input.count < 2 { return input.count}
+//
+//    var set: Set<String> = []
+//    for i in 0..<input.count {
+//        for s in set {
+//            set.insert(s + input[i])
+//        }
+//        set.insert(input[i])
+//    }
+//
+//    var longestVal: Int = 1
+//    let setArray: [String] = set.sorted { $0.count > $1.count }
+//    for s in setArray {
+//        if s.count < 2 { break }
+//        if s == String(s.reversed()) {
+//            longestVal = s.count
+//            break
+//        }
+//    }
+//
+//    return longestVal
+//}
+
+// second solution
 func longestPalindromeSubsequence(_ input: String) -> Int {
-//    let input: String = readLine()!.replacingOccurrences(of: "\"", with: "")
-    if input.count < 2 { return input.count}
-    
-    var set: Set<String> = []
-    for i in 0..<input.count {
-        for s in set {
-            set.insert(s + input[i])
-        }
-        set.insert(input[i])
+    let n: Int = input.count
+    var dp: [[Int]] = [[Int]](repeating: [Int](repeating: 0, count: n), count: n)
+    for i in 0..<n {
+        dp[i][i] = 1
     }
     
-    var longestVal: Int = 1
-    let setArray: [String] = set.sorted { $0.count > $1.count }
-    for s in setArray {
-        if s.count < 2 { break }
-        if s == String(s.reversed()) {
-            longestVal = s.count
-            break
+    for i in stride(from: n - 1, through: 0, by: -1) {
+        for j in i+1..<n {
+            if input[i] == input[j] {
+                dp[i][j] = 2 + dp[i+1][j-1]
+            } else {
+                dp[i][j] = max(dp[i+1][j], dp[i][j-1])
+            }
         }
     }
-
-    return longestVal
+    return dp[0][n-1]
 }
-
 
 // Problem 1 - Longest Common Substring
 func longestCommonSubstring(s1: String, s2: String) -> Int {
