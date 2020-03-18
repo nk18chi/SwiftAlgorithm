@@ -158,4 +158,5 @@ import Foundation
 //print(getMaxinumCandies())
 //print(numDecodings("1231010"))
 
-print(longestPalindromeSubsequence())
+//print(longestPalindromeSubsequence())
+//print(longestCommonSubstring(s1: "passport", s2: "ppsspt"))

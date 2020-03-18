@@ -29,7 +29,7 @@ func equalSubsetSubPartitio() -> Bool {
     return false
 }
 
-// Problem 1 - Longest Palindrome Subsequence
+// Problem 1 - Longest Palindrome Subsequences
 func longestPalindromeSubsequence() -> Int {
     let input: String = readLine()!.replacingOccurrences(of: "\"", with: "")
     if input.count < 2 { return input.count}
@@ -55,3 +55,34 @@ func longestPalindromeSubsequence() -> Int {
     return longestVal
 }
 
+
+// Problem 1 - Longest Common Substring
+func longestCommonSubstring(s1: String, s2: String) -> Int {
+    var patterns: Set<String> = []
+    var prev: Set<String> = []
+    for c in s1 {
+        for p in prev {
+            let newWord: String = p + String(c)
+            patterns.insert(newWord)
+            prev.insert(newWord)
+            prev.remove(p)
+        }
+        patterns.insert(String(c))
+        prev.insert(String(c))
+    }
+    
+    prev = []
+    var res: Int = 0
+    for c in s2 {
+        for p in prev {
+            let newWord: String = p + String(c)
+            if patterns.contains(newWord) { res = max(res, newWord.count) }
+            prev.insert(newWord)
+            prev.remove(p)
+        }
+        if patterns.contains(String(c)) { res = max(res, 1) }
+        prev.insert(String(c))
+    }
+
+    return res
+}
