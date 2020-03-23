@@ -159,6 +159,8 @@ import Foundation
 //print(numDecodings("1231010"))
 
 //print(longestPalindromeSubsequence())
-print(equalSubsetSubPartitio([1, 1, 3, 4, 7])) //True
-print(longestPalindromeSubsequence("abdbca")) // 5
-print(longestCommonSubstring(s1: "passport", s2: "ppsspt")) //3
+//print(equalSubsetSubPartitio([1, 1, 3, 4, 7])) //True
+//print(longestPalindromeSubsequence("abdbca")) // 5
+//print(longestCommonSubstring(s1: "passport", s2: "ppsspt")) //3
+
+print(corona())

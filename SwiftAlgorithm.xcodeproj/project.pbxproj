@@ -34,6 +34,10 @@
 		B0BA4666241C2160009DBA77 /* dpAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA4665241C2160009DBA77 /* dpAssignment.swift */; };
 		B0BA4668241C2186009DBA77 /* shortestPathAssignment.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA4667241C2186009DBA77 /* shortestPathAssignment.swift */; };
 		B0BA466A24217BF6009DBA77 /* practiceProblemSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA466924217BF6009DBA77 /* practiceProblemSet.swift */; };
+		B0BA466F242573C2009DBA77 /* lps.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA466E242573C2009DBA77 /* lps.swift */; };
+		B0BA46712425801C009DBA77 /* happy.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA46702425801C009DBA77 /* happy.swift */; };
+		B0BA46752425863F009DBA77 /* corona.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA46742425863F009DBA77 /* corona.swift */; };
+		B0BA467724258CA6009DBA77 /* maze.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0BA467624258CA6009DBA77 /* maze.swift */; };
 		B0D4297923F21FE40092108D /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4297823F21FE40092108D /* main.swift */; };
 		B0D4298123F2208E0092108D /* Searching.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298023F2208E0092108D /* Searching.swift */; };
 		B0D4298423F37CFE0092108D /* Recursion.swift in Sources */ = {isa = PBXBuildFile; fileRef = B0D4298323F37CFE0092108D /* Recursion.swift */; };
@@ -93,6 +97,10 @@
 		B0BA4665241C2160009DBA77 /* dpAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = dpAssignment.swift; sourceTree = "<group>"; };
 		B0BA4667241C2186009DBA77 /* shortestPathAssignment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = shortestPathAssignment.swift; sourceTree = "<group>"; };
 		B0BA466924217BF6009DBA77 /* practiceProblemSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = practiceProblemSet.swift; sourceTree = "<group>"; };
+		B0BA466E242573C2009DBA77 /* lps.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = lps.swift; sourceTree = "<group>"; };
+		B0BA46702425801C009DBA77 /* happy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = happy.swift; sourceTree = "<group>"; };
+		B0BA46742425863F009DBA77 /* corona.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = corona.swift; sourceTree = "<group>"; };
+		B0BA467624258CA6009DBA77 /* maze.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = maze.swift; sourceTree = "<group>"; };
 		B0D4297523F21FE40092108D /* SwiftAlgorithm */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = SwiftAlgorithm; sourceTree = BUILT_PRODUCTS_DIR; };
 		B0D4297823F21FE40092108D /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
 		B0D4298023F2208E0092108D /* Searching.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Searching.swift; sourceTree = "<group>"; };
@@ -239,6 +247,17 @@
 			path = DynamicProgramming;
 			sourceTree = "<group>";
 		};
+		B0BA466B24255882009DBA77 /* Exam */ = {
+			isa = PBXGroup;
+			children = (
+				B0BA466E242573C2009DBA77 /* lps.swift */,
+				B0BA46702425801C009DBA77 /* happy.swift */,
+				B0BA46742425863F009DBA77 /* corona.swift */,
+				B0BA467624258CA6009DBA77 /* maze.swift */,
+			);
+			path = Exam;
+			sourceTree = "<group>";
+		};
 		B0D4296C23F21FE40092108D = {
 			isa = PBXGroup;
 			children = (
@@ -259,6 +278,7 @@
 		B0D4297723F21FE40092108D /* SwiftAlgorithm */ = {
 			isa = PBXGroup;
 			children = (
+				B0BA466B24255882009DBA77 /* Exam */,
 				B0BA465024199754009DBA77 /* DynamicProgramming */,
 				B0BA46462416F04C009DBA77 /* ShortestPath */,
 				B0E668E9241062BE006684EF /* Greedy */,
@@ -397,6 +417,7 @@
 			files = (
 				B04CCDF923F6152A00F039B8 /* showFIlesAndDirectories.swift in Sources */,
 				B0F959642405C98400D18466 /* dfs.swift in Sources */,
+				B0BA46752425863F009DBA77 /* corona.swift in Sources */,
 				B08C804923F4B0F1002A12AA /* exercise_permutation.swift in Sources */,
 				B039DECC2400843C006CE8DA /* getParent.swift in Sources */,
 				B0BA4668241C2186009DBA77 /* shortestPathAssignment.swift in Sources */,
@@ -411,6 +432,7 @@
 				B0F9597C2409988000D18466 /* problem3.swift in Sources */,
 				B0F959742408797F00D18466 /* getNumberOfIslands.swift in Sources */,
 				B039DED62401BC9F006CE8DA /* getSortedElements.swift in Sources */,
+				B0BA466F242573C2009DBA77 /* lps.swift in Sources */,
 				B0F9596C2407B3AE00D18466 /* problemSet2.swift in Sources */,
 				B039DED42401B30E006CE8DA /* TreeTraversal.swift in Sources */,
 				B0E668E624106233006684EF /* topologicalSortAssignment.swift in Sources */,
@@ -430,8 +452,10 @@
 				B039DEC923FF538B006CE8DA /* CustomPriorityQueue.swift in Sources */,
 				B0F9597224086E2800D18466 /* getNumberOfTown.swift in Sources */,
 				B039DED82401BD93006CE8DA /* getPatternFromText.swift in Sources */,
+				B0BA46712425801C009DBA77 /* happy.swift in Sources */,
 				B04CCDF623F60D3300F039B8 /* Sorting.swift in Sources */,
 				B0F959692407864000D18466 /* sushiReview.swift in Sources */,
+				B0BA467724258CA6009DBA77 /* maze.swift in Sources */,
 				B0F959762408833800D18466 /* getStepsToEscapeFromMaze.swift in Sources */,
 				B08C804C23F4C1EF002A12AA /* Bag.swift in Sources */,
 				B0BA466A24217BF6009DBA77 /* practiceProblemSet.swift in Sources */,
